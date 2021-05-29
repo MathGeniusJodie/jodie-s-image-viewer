@@ -1,0 +1,8 @@
+#!/bin/sh
+
+dim=$(stty size)
+#halfheight="${dim%% *}"
+width="${dim##* }"
+width="${2:-$width}"
+
+convert "$1" -resize "${width}" RGBA:- | ./jiv_binary "$width"
