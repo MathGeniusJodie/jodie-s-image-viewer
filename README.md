@@ -1,7 +1,7 @@
 # Jodie's Image Viewer
 terminal image viewer for linux written in c without a libc
 
-![tiv image.png $width](https://raw.githubusercontent.com/MathGeniusJodie/jodie-s-image-viewer/main/jiv.png)
+![jiv image.png $width](https://raw.githubusercontent.com/MathGeniusJodie/jodie-s-image-viewer/main/jiv.png)
 
 ## features
 - static binary
@@ -10,7 +10,7 @@ terminal image viewer for linux written in c without a libc
 - transparency
 
 ## how it works
-TIV uses imagemagick to actually read and resize the image (for compatibility with multiple image formats without adding bloat to TIV itself). The actual user-facing program is a shell script that pipes the rgba output of imagemagick to a binary that handles actually printing to the terminal.
+JIV uses imagemagick to actually read and resize the image (for compatibility with multiple image formats without adding bloat to JIV itself). The actual user-facing program is a shell script that pipes the rgba output of imagemagick to a binary that handles actually printing to the terminal.
 
 ## dependencies
 - imagemagick
@@ -23,4 +23,4 @@ TIV uses imagemagick to actually read and resize the image (for compatibility wi
 ```
 git clone https://github.com/MathGeniusJodie/jodie-s-image-viewer.git
 ```
-copy the files "tiv" and "tiv_binary" to "/usr/bin/" or alternatively compile your own binary with by running "build.sh", you can also edit the build script to use clang instead of gcc
+copy the files "jiv" and "jiv_binary" to "/usr/bin/" or alternatively compile your own binary with by running "build.sh", you can also edit the build script to use clang instead of gcc
